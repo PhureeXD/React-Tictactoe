@@ -45,7 +45,7 @@ export default function MainGame() {
 
       <footer className="flex justify-center">
         <button
-          className={`w-full mt-4 font-bold text-white px-8 py-4 ${
+          className={`w-full mt-4 font-bold text-white px-4 py-4 ${
             winner || cnt === 9 ? "bg-blue-600" : "bg-blue-500/70"
           } rounded-full hover:bg-blue-700 focus:outline-none`}
           onClick={() => Reset()}

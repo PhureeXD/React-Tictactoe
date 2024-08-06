@@ -9,7 +9,8 @@ export default function Table({ squares, handleClick, isX, winner }) {
       {squares.map((square, index) => (
         <button
           key={index}
-          className="w-20 h-20 p-4 text-4xl font-bold border border-gray-300 bg-slate-100 hover:bg-gray-300 focus:outline-none"
+          className={`w-20 h-20 p-4 text-4xl font-bold bg-white border
+           border-gray-400 hover:bg-gray-300 focus:outline-none`}
           onClick={() => handleClick(index)}
           onMouseEnter={() => setHover(index)}
           onMouseLeave={() => setHover(null)}
